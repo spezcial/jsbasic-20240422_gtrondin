@@ -1,3 +1,9 @@
-function factorial(n) {
-  return n ? n * factorial(n - 1) : 1;
+function factorial(num) {
+  let result = 1;
+
+  for (let i = 1; i <= num; i++) {
+    result *= i;
+  }
+
+  return result;
 }
